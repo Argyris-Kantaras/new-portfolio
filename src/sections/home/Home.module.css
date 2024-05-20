@@ -1,0 +1,21 @@
+.home {
+    background-color: rgb(0, 0, 21);
+    background-image: url('../../images/home.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50em;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+}
+
