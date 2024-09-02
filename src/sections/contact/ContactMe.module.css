@@ -1,0 +1,19 @@
+.icon {
+    width: 50px;
+    border-radius: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    background-color: rgba(0, 0, 122,0.3);
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+}
+
+.contactDetails {
+    margin: 5% 5% 0 5%;
+}

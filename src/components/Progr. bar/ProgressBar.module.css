@@ -1,0 +1,12 @@
+.progressBase {
+    width: 100%;
+    height: 15px;
+    margin: 10px 0px 10px 0;
+    background-color: rgba(0, 0, 0,0.1);
+}
+
+.progress {
+    background-color: green;
+    /* width: 100%; */
+    height: 100%;
+}

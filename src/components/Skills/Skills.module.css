@@ -1,0 +1,48 @@
+.skillsSide {
+    width: 50%;
+}
+
+.personalDetailsMain {
+    display: flex;
+}
+
+.personalDetailsSecondary {
+    position: relative;
+    left: 10%;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.personalDetails {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.details {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.profileImg {
+    width: 180px;
+    margin: 20px;
+}
+
+.skillsList {
+    list-style: none;
+    text-align: left;
+}
+
+
+.othersList {
+    list-style: none;
+    display: flex;
+}
+
+.othersList li {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+}

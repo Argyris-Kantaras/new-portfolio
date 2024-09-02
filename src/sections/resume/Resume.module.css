@@ -1,0 +1,23 @@
+.resume {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+.experience {
+    width: 50%;
+    position: relative;
+    left: 10%;
+    padding-left: 15px;
+    border-left: double blue;
+}
+
+.education {
+    width: 50%;
+    padding-left: 15px;
+    border-left: double blue;
+}
+
+.educationDetails{
+    width: 60%;
+}
