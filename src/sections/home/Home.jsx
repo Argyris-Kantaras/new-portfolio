@@ -2,9 +2,9 @@ import {TypeAnimation} from 'react-type-animation';
 import styles from './Home.module.css';
 import { useEffect, useRef } from 'react';
 import { useIsVisible } from '../../hooks/useIsVisible';
-const allSkills = ['React.js ', 'Redux ', 'JavaScript ', 'Python ','HTML ', 'CSS ' ]
+const allSkills = ['React.js ', 'Redux ', 'JavaScript ', 'Python ','HTML ', 'CSS ','Java' ]
 
-function Home ({setVisibleEl,scrollEl}) {
+function Home ({setVisibleEl,scrollEl,setScrollEl}) {
 
     const scrollTo = useRef();
     const isVisible = useIsVisible(scrollTo)
@@ -14,7 +14,10 @@ function Home ({setVisibleEl,scrollEl}) {
 
     useEffect(()=>{
         if(isVisible) setVisibleEl(0)
-        if(scrollEl === 0) goToElement()
+        if(scrollEl === 0) {
+            goToElement()
+            setScrollEl(null)
+        }
     },[scrollEl,isVisible])
 
 return <div ref={scrollTo} className={styles.home}>

@@ -7,7 +7,7 @@ import { useEffect, useRef } from 'react';
 import { useIsVisible } from '../../hooks/useIsVisible';
 
 
-function ContactMe ({scrollEl,setVisibleEl}) {
+function ContactMe ({scrollEl,setVisibleEl,setScrollEl}) {
 
         const scrollTo = useRef();
         const isVisible = useIsVisible(scrollTo)
@@ -21,7 +21,10 @@ function ContactMe ({scrollEl,setVisibleEl}) {
 
     useEffect(()=>{
         if(isVisible) setVisibleEl(3)
-        if(scrollEl === 3) goToElement()
+        if(scrollEl === 3) {
+            goToElement()
+            setScrollEl(null)
+        }
     },[scrollEl,isVisible])
 
     return <div >

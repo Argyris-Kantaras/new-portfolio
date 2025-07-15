@@ -8,9 +8,9 @@ import Portfolio from '../sections/portfolio/Portfolio'
 import ContactMe from '../sections/contact/ContactMe'
 
 function MainPage () {
-    const [scrollEl,setScrollEl] = useState(0)
+    const [scrollEl,setScrollEl] = useState(null)
     const [visibleEl,setVisibleEl] = useState(0)
-    return <div className={styles.mainPage}>
+    return <div  className={styles.mainPage}>
       <Header visibleEl={visibleEl} setScrollEl = {setScrollEl}  scrollEl = {scrollEl}/>
       <Home setVisibleEl={setVisibleEl} setScrollEl = {setScrollEl} scrollEl = {scrollEl}/>
       <AboutMe setVisibleEl={setVisibleEl} setScrollEl = {setScrollEl} scrollEl = {scrollEl}/>

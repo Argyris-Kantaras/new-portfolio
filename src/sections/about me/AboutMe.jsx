@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import Skills from '../../components/Skills/Skills';
 import { useIsVisible } from '../../hooks/useIsVisible';
 
-function AboutMe ({scrollEl,setVisibleEl}) {
+function AboutMe ({scrollEl,setVisibleEl,setScrollEl}) {
 
     const scrollTo = useRef();
     const isVisible = useIsVisible(scrollTo)
@@ -13,7 +13,10 @@ function AboutMe ({scrollEl,setVisibleEl}) {
 
     useEffect(()=>{
         if(isVisible) setVisibleEl(1)
-        if(scrollEl === 1) goToElement()
+        if(scrollEl === 1) {
+            goToElement()
+            setScrollEl(null)
+        }
     },[scrollEl,isVisible])
 
     return <div  className={styles.aboutMe}>
