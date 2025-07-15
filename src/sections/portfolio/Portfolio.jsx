@@ -7,7 +7,7 @@ import weatherImg from '../../images/weather-app.jpg'
 import moviesImg from '../../images/movies.jpg'
 import { useIsVisible } from '../../hooks/useIsVisible';
 
-function Portfolio ({scrollEl,setVisibleEl}) {
+function Portfolio ({scrollEl,setVisibleEl,setScrollEl}) {
     const scrollTo = useRef();
     const isVisible = useIsVisible(scrollTo)
     const goToElement = () =>{
@@ -15,7 +15,10 @@ function Portfolio ({scrollEl,setVisibleEl}) {
     }
     useEffect(()=>{
         if(isVisible) setVisibleEl(2)
-        if(scrollEl === 2) goToElement()
+        if(scrollEl === 2) {
+            goToElement()
+            setScrollEl(null)
+        }
     },[scrollEl,isVisible])
 
 
